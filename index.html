@@ -29,7 +29,7 @@
             
             try {
                 const parsedData = JSON.parse(input);
-                const response = await fetch("http://127.0.0.1:5000/bfhl", {
+                const response = await fetch("https://srm-ecfm.onrender.com", {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ data: parsedData })
